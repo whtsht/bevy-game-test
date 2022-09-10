@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bevy</title>
+        <link rel="stylesheet" href="/index-b10086f61ff0f05f.css">
+        <script>document.addEventListener("DOMContentLoaded", () => {
+    new MutationObserver((records, observer) => {
+        for (const record of records) {
+            for (const child of record.addedNodes) {
+                if (child instanceof HTMLCanvasElement) {
+                    document.body.querySelector("p")?.remove()
+                    child.focus()
+                    observer.disconnect()
+                    return
+                }
+            }
+        }
+    }).observe(document.body, {
+        childList: true,
+    })
+})
+</script>
+        
+    
+<link rel="preload" href="/invaders-2d2a81cbf03e5b47_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/invaders-2d2a81cbf03e5b47.js"></head>
+    <body>
+        <p>Now Loading ...</p>
+    
+
+<script type="module">import init from '/invaders-2d2a81cbf03e5b47.js';init('/invaders-2d2a81cbf03e5b47_bg.wasm');</script></body></html>
